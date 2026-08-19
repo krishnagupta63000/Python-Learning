@@ -1,0 +1,1 @@
+print("Hello World", "\nThis is my First Program on my new MacBoook Pro M5 Pro")
