@@ -128,4 +128,3 @@ Write a program that prompts the user to enter the initial quantity of water and
 days (N) and displays the quantity of water in the tank after the Nth day. Check for valid and
 invalid cases. Do not use loops.'''
 
-i
