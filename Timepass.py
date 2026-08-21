@@ -25,35 +25,49 @@
 #     print("Invalid Operator")
 
 
-import random
-choices = ["rock", "paper", "scissors"]
-player_score = 0
-computer_score = 0
-print("🎮 ROCK PAPER SCISSORS")
-print("-----------------------")
-while True:
-    player = input("\nChoose rock, paper, scissors (or quit): ").lower()
-    if player == "quit":
-        break
-    if player not in choices:
-        print("❌ Invalid choice! Try again.")
-        continue
-    computer = random.choice(choices)
-    print("You chose:", player)
-    print("Computer chose:", computer)
-    if player == computer:
-        print("🤝 It's a draw!")
-    elif (
-        (player == "rock" and computer == "scissors")
-        or (player == "paper" and computer == "rock")
-        or (player == "scissors" and computer == "paper")
-    ):
-        print("🎉 You win!")
-        player_score += 1
-    else:
-        print("💀 Computer wins!")
-        computer_score += 1
-    print(f"Score → You: {player_score} | Computer: {computer_score}")
-print("\n🏁 GAME OVER")
-print(f"Final Score → You: {player_score} | Computer: {computer_score}")
-print("Thanks for playing! 😎")
+# import random
+# choices = ["rock", "paper", "scissors"]
+# player_score = 0
+# computer_score = 0
+# print("🎮 ROCK PAPER SCISSORS")
+# print("-----------------------")
+# while True:
+#     player = input("\nChoose rock, paper, scissors (or quit): ").lower()
+#     if player == "quit":
+#         break
+#     if player not in choices:
+#         print("❌ Invalid choice! Try again.")
+#         continue
+#     computer = random.choice(choices)
+#     print("You chose:", player)
+#     print("Computer chose:", computer)
+#     if player == computer:
+#         print("🤝 It's a draw!")
+#     elif (
+#         (player == "rock" and computer == "scissors")
+#         or (player == "paper" and computer == "rock")
+#         or (player == "scissors" and computer == "paper")
+#     ):
+#         print("🎉 You win!")
+#         player_score += 1
+#     else:
+#         print("💀 Computer wins!")
+#         computer_score += 1
+#     print(f"Score → You: {player_score} | Computer: {computer_score}")
+# print("\n🏁 GAME OVER")
+# print(f"Final Score → You: {player_score} | Computer: {computer_score}")
+# print("Thanks for playing! 😎")
+
+#Q.
+'''Store following word meanings in a python dictionary :
+table: "a piece of furniture", "list of facts & figures" cat: "a small animal"'''
+
+ch = (input("Enter Table or Cat: "))
+dict = {
+    "Table" : ["A piece of Furniture", "List of Facts & Figures"],
+    "Cat" : "A small Animal"
+}
+if(ch=='Cat' or ch=="cat"):
+    print(dict["Cat"])
+else:
+    print(dict["Table"])
