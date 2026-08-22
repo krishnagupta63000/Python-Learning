@@ -128,10 +128,40 @@ Write a program that prompts the user to enter the initial quantity of water and
 days (N) and displays the quantity of water in the tank after the Nth day. Check for valid and
 invalid cases. Do not use loops.'''
 
-v = float(input("Enter Initial Amount of Water: "))
-n = int(input("Enter Number of Days: "))
-if (n>=0 and v>0):
-    final_v = v*(0.95)**n + 200*(1-0.95**n)
-    print("On day no.",n,"There is",round(final_v, 2),"L amount of Water")
+# v = float(input("Enter Initial Amount of Water: "))
+# n = int(input("Enter Number of Days: "))
+# if (n>=0 and v>0):
+#     final_v = v*(0.95)**n + 200*(1-0.95**n)
+#     print("On day no.",n,"There is",round(final_v, 2),"L amount of Water")
+# else:
+#     print("Invalid case")
+
+
+'''Enter the coefficients of two straight lines a1x + b1y = c1 and a2x + b2y = c2 and display their point
+of intersection. Handle all the cases for invalid input as well as the cases where the two lines are
+parallel or coincident, and display the solution till exactly 2 decimal places.'''
+
+a1 = int(input("Enter a1: "))
+b1 = int(input("Enter b1: "))
+c1 = int(input("Enter c1: "))
+a2 = int(input("Enter a2: "))
+b2 = int(input("Enter b2: "))
+c2 = int(input("Enter c2: "))
+
+if (a1==0 and b1 == 0):
+    print("Invalid Input")
+elif (a2==0 and b2==0):
+    print("Invalid Input")
 else:
-    print("Invalid case")
+    d = a1*b2 - a2*b1
+
+    if(d!=0):
+        x = (c1*b2 - c2*b1)/d
+        y = (a1*c2 - a2*c1) / d
+        print("(",round(x,2),",",round(y,2),") is the Intersetion Point")
+
+    elif (a1*c2 == a2*c1 and b1*c2 == b2*c1):
+        print("Co-incident Lines")
+
+    else:
+        print("Parallel Lines")
