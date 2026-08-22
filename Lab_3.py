@@ -128,13 +128,13 @@ Write a program that prompts the user to enter the initial quantity of water and
 days (N) and displays the quantity of water in the tank after the Nth day. Check for valid and
 invalid cases. Do not use loops.'''
 
-# v = float(input("Enter Initial Amount of Water: "))
-# n = int(input("Enter Number of Days: "))
-# if (n>=0 and v>0):
-#     final_v = v*(0.95)**n + 200*(1-0.95**n)
-#     print("On day no.",n,"There is",round(final_v, 2),"L amount of Water")
-# else:
-#     print("Invalid case")
+v = float(input("Enter Initial Amount of Water: "))
+n = int(input("Enter Number of Days: "))
+if (n>=0 and v>0):
+    final_v = v*(0.95)**n + 200*(1-0.95**n)
+    print("On day no.",n,"There is",round(final_v, 2),"L amount of Water")
+else:
+    print("Invalid case")
 
 
 '''Enter the coefficients of two straight lines a1x + b1y = c1 and a2x + b2y = c2 and display their point
