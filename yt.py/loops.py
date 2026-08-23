@@ -53,7 +53,7 @@ for i in list:
 '''Search for a number x in this tuple using loop:
 [1, 4, 9, 16, 25, 36, 49, 64, 81,100]'''
 
-nums = [1, 4, 9, 16, 25, 36, 49, 64, 81,100]
+'''nums = [1, 4, 9, 16, 25, 36, 49, 64, 81,100]
 x = int(input("Enter x : "))
 i = 0
 for val in nums:
@@ -62,4 +62,9 @@ for val in nums:
         break
     i += 1
 else:
-    print("Not Found.")
+    print("Not Found.")'''
+
+'''Print numbers from 1 to 100.'''
+
+for i in range(1,101):
+    print(i)
