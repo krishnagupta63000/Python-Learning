@@ -82,9 +82,17 @@ for i in range(1,11):
 
 '''WAP to find the sum of first n, numbers. (using while)'''
 
-n = int(input("Enter N: "))
+'''n = int(input("Enter N: "))
 sum = 0
 for i in range(n,0,-1):
     sum = sum + i
     i += 1
-print("Sum : ",sum)
+print("Sum : ",sum)'''
+
+'''WAP to find the factorial of first n numbers. (using for)''' 
+
+n = int(input("Enter n : "))
+fact = 1
+for i in range(n, 0, -1):
+    fact = fact * i
+print(fact)
