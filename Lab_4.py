@@ -54,9 +54,44 @@ between 0 and 59. Hours should be written with one or two digits as needed, whil
 should always be written with two digits - add a leading zero, as needed. Example, Given the time
 1:46 as input, the output displayed should be 2:01.'''
 
-hours = int(input("Enter Hours : "))
+'''hours = int(input("Enter Hours : "))
 mins = int(input("Enter Minutes : "))
 total = hours * 60 + mins + 15
 h = total//60
 m = total%60
 print("After adding 15 mins : ",h,"Hours", m, "Minutes")
+'''
+'''A student has to travel n kilometers. He can choose between three types of transportation:
+Taxi. Starting fee: 33.58 INR. Day rate: 37.89 INR/km. Night rate: 43.17 INR/km.
+Bus. Day / Night rate: 4.32 INR/km. Can be used for distances of a minimum of 20 km.
+Train. Day / Night rate: 2.88 INR/km. Can be used for distances of a minimum of 100 km.
+Write a program that reads the number of kilometers n and period of the day (day or night) and
+calculates the price for the cheapest transport.'''
+
+n = float(input("Enter kilometers: "))
+time = input("Enter day or night: ")
+
+if (time == "day"):
+    taxi = 33.58 + n * 37.89
+else:
+    taxi = 33.58 + n * 43.17
+
+bus = n * 4.32
+train = n * 2.88
+
+if (n < 20):
+    cheapest = taxi
+elif (n < 100):
+    if (taxi < bus):
+        cheapest = taxi
+    else:
+        cheapest = bus
+else:
+    if (taxi < bus and taxi < train):
+        cheapest = taxi
+    elif (bus < train):
+        cheapest = bus
+    else:
+        cheapest = train
+
+print("Cheapest price:", cheapest)
