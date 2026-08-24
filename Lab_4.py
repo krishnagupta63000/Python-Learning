@@ -1,0 +1,62 @@
+'''A company decided to give bonus of 5% to employee if his/her year of service is more than 5 years. 
+Ask user for their salary and years of service and print the net bonus amount.'''
+
+'''sal = int(input("Enter Salary : "))
+years = int(input("Enter Years of work : "))
+if (years>=5):
+    print("Yeah!, You got an additional bonus of 5%.")
+    print("Your Salary : ", 0.05*sal + sal)
+else: 
+    print("Your Salary : ", sal)'''
+
+'''Write a program that reads input data from the console - a password (one line of random text)
+and checks if the input matches the phrase "s3cr3t!P@ssw0rd". If it matches, print "Welcome",
+otherwise print "Wrong password!".'''
+
+'''p = input("Enter Password : ")
+x = "s3cr3t!P@ssw0rd"
+if (p==x):
+    print("Welcome!")
+else: 
+    print("Incorrect Password.")'''
+
+'''Write a program that reads input data from the console - the measures of a geometric
+shape and calculates its area. There are four types of
+shapes: square, rectangle, circle and triangle.
+The first line of input is the type of shape (square, rectangle, circle, triangle):
+If the shape is a square, the next argument will be one number - the length of its side.
+If the shape is a rectangle, the next argument will be two numbers - the lengths of its sides.
+If the shape is a circle, the next argument will be one number - the radius of the circle.
+If the shape is a triangle, the next argument will be two numbers - its base and the
+corresponding altitude.'''
+
+'''sh = input("Enter Shape : ")
+if (sh == "square"):
+    s = int(input("Enter Side of a Square : "))
+    print("Area of Square is", s**2,"sq cm")
+elif(sh == "rectangle"):
+    l = int(input("Enter Length of Rectangle : "))
+    b = int(input("Enter Breadth of Rectangle : "))
+    print("Area of Rectagle is", l*b, "sq cm")
+elif(sh == "circle"):
+    pi = 3.14
+    r = int(input("Enter Radius : "))
+    print("Area of Circle is", pi*r**2,"sq cm")
+else:
+    l = int(input("Enter Length of Triangle : "))
+    b = int(input("Enter Breadth of Triangle : "))
+    print("Area of Triangle is",0.5*l*b,"sq cm")'''
+
+'''Write a program that reads two integers - hours and minutes based on a 24-hour day format and
+calculates what time it will be 15 minutes later. The result should be printed in the following
+format hh:mm. Hours should always be between 0 and 23, while minutes should always be
+between 0 and 59. Hours should be written with one or two digits as needed, while the minutes
+should always be written with two digits - add a leading zero, as needed. Example, Given the time
+1:46 as input, the output displayed should be 2:01.'''
+
+hours = int(input("Enter Hours : "))
+mins = int(input("Enter Minutes : "))
+total = hours * 60 + mins + 15
+h = total//60
+m = total%60
+print("After adding 15 mins : ",h,"Hours", m, "Minutes")
