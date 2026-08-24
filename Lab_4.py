@@ -110,7 +110,8 @@ workdays = 365-n
 total = 30000
 during_workdays = workdays * 63
 during_holidays = n*127
-if ( (during_workdays + during_holidays)>=total):
-    print("cant sleep well",(during_workdays + during_holidays)-total)
+playing_time = during_workdays + during_holidays
+if (playing_time >= total):
+    print("can sleep well",(playing_time - total,"Hours"))
 else:
-    print("can sleep well",total - (during_workdays + during_holidays))
+    print("cant sleep well",total - playing_time,"Hours")
