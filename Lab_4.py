@@ -162,14 +162,29 @@ else:
 
 
 '''Write a program that finds all numbers in the range [1 … 1000], that end in 6.'''
+
+
 '''for i in range(1,1001):
     if (i%10 == 6):
         print(i)'''
 
 '''Write a program that reads n integers and finds their sum.'''
-n = int(input("Enter n : "))
+
+
+'''n = int(input("Enter n : "))
 sum = 0
 for i in range(n):
     x = int(input("Enter Number : "))
     sum = sum + x
-print("Sum : ", sum)
+print("Sum : ", sum)'''
+
+'''Take a positive integer N as input and print its table as follows:
+N x 1 = N
+N x 2 = 2N
+……
+N x 20 = 20N'''
+
+n = int(input("Enter n : "))
+if (n>0):
+    for i in range(1,11):
+        print(n,"x",i,"=", i,n)
