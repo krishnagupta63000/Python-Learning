@@ -105,7 +105,7 @@ Write a program that reads the number of holidays and prints whether Tom can sle
 how much the difference from the norm for the current year is. It is assumed that there are 365
 days in one year.'''
 
-n = int(input("Enter Number of Holidays : "))
+'''n = int(input("Enter Number of Holidays : "))
 workdays = 365-n
 total = 30000
 during_workdays = workdays * 63
@@ -114,7 +114,7 @@ playing_time = during_workdays + during_holidays
 if (playing_time >= total):
     print("can sleep well",(playing_time - total,"Hours"))
 else:
-    print("cant sleep well",total - playing_time,"Hours")
+    print("cant sleep well",total - playing_time,"Hours")'''
 
 '''Most of the people start planning their vacations well in advance. A young programmer from
 Bulgaria has a certain budget (BGN is the currency of Bulgaria) and spare time in a particular
@@ -136,7 +136,7 @@ Winter – 80% of the budget.
 Upon traveling in Europe, regardless of the season, the programmer will
 spend 90% of the budget.'''
 
-budget = int(input("Enter Budget : "))
+'''budget = int(input("Enter Budget : "))
 s = input("Enter Season : ")
 
 if (budget<=100):
@@ -158,6 +158,10 @@ elif (budget<=1000):
 else:
     print("Europe")
     print("Hotel")
-    print("Budget : ", budget*0.9)
+    print("Budget : ", budget*0.9)'''
 
 
+'''Write a program that finds all numbers in the range [1 … 1000], that end in 6.'''
+for i in range(1,1001):
+    if (i%10 == 6):
+        print(i)
