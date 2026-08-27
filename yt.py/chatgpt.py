@@ -8,8 +8,16 @@ else:
     print(n, "Negative Number")'''
 
 '''Take a person's age as input and print whether they are a minor or an adult.'''
-age = int(input("Enter Age : "))
+'''age = int(input("Enter Age : "))
 if (age>=18):
     print("Minor")
 else:
-    print("Adult")
+    print("Adult")'''
+
+'''Take an integer as input and count how many digits it contains.'''
+n = int(input("Enter a Number : "))
+count = 0
+while (n>0):
+    n = n//10
+    count += 1
+print(count)
