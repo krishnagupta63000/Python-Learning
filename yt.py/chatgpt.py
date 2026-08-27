@@ -15,9 +15,20 @@ else:
     print("Adult")'''
 
 '''Take an integer as input and count how many digits it contains.'''
-n = int(input("Enter a Number : "))
+'''n = int(input("Enter a Number : "))
 count = 0
 while (n>0):
     n = n//10
     count += 1
-print(count)
+print(count)'''
+
+'''Reverse a Number
+Take a number like 12345 and print it in reverse: 54321.'''
+
+'''n = int(input("Enter a Number : "))
+rev = 0
+while (n>0):
+    digit = n % 10
+    reverse = reverse * 10 + digit
+    n = n // 10
+print("Reverse:", reverse)'''
