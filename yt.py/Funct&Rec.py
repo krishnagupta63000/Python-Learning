@@ -19,9 +19,21 @@ def lengthOf(list):
 lengthOf(fruits)
 lengthOf(marks)'''
 
-marks = [90, 98, 75, 74, 78]
+# WAF to print the elements of a list in a single line. (list is the parameter)
+'''marks = [90, 98, 75, 74, 78]
 def elementsof(list):
     for i in range (5):
         print(list[i])
 
-elementsof(marks)
+elementsof(marks)'''
+
+# WAF to find the factorial of n. (n is the parameter)
+
+n = int(input("Enter N : "))
+fact = 1
+def fact(n):
+    fact = 1
+    for i in range(1, n+1):
+        fact = fact * i
+    return(fact)
+print(fact(n))
