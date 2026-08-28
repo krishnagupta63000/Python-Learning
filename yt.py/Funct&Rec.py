@@ -29,11 +29,19 @@ elementsof(marks)'''
 
 # WAF to find the factorial of n. (n is the parameter)
 
-n = int(input("Enter N : "))
+'''n = int(input("Enter N : "))
 fact = 1
 def fact(n):
     fact = 1
     for i in range(1, n+1):
         fact = fact * i
     return(fact)
-print(fact(n))
+print(fact(n))'''
+
+# WAF to convert USD to INR.
+
+USD = int(input("Enter amount in USD : "))
+def convert(USD):
+    INR = USD*94
+    print("₹",INR)
+convert(USD)
