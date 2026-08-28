@@ -40,8 +40,18 @@ print(fact(n))'''
 
 # WAF to convert USD to INR.
 
-USD = int(input("Enter amount in USD : "))
+'''USD = int(input("Enter amount in USD : "))
 def convert(USD):
     INR = USD*94
     print("₹",INR)
-convert(USD)
+convert(USD)'''
+
+#Even or Odd from function
+
+n = int(input("Enter Any Number : "))
+def tell(n):
+    if (n%2==0):
+        return "Even"
+    else:
+        return "Odd"
+print(tell(n))
