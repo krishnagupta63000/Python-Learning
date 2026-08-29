@@ -51,7 +51,7 @@ convert(USD)'''
 n = int(input("Enter Any Number : "))
 def tell(n):
     if (n%2==0):
-        return "Even"
+        return "Even Number"
     else:
-        return "Odd"
+        return "Odd Numbers"
 print(tell(n))
