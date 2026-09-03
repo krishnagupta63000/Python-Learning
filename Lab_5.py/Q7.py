@@ -2,4 +2,4 @@
 # code efficient by minimizing the number of loop iterations.
 
 n = int(input("Enter Number : "))
-if ()
+
