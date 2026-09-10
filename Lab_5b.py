@@ -25,14 +25,34 @@
 # power P using a while loop. Do not use the ** operator or the pow() function. Handle invalid
 # cases as well.
 
-n = int(input("Enter Number : "))      #3
-p = int(input("Enter Power : "))        #3                                  #3 * 3 * 3
-if (n<=0 or p<=0):
-    print("Invalid Input")
+# n = int(input("Enter Number : "))      #3
+# p = int(input("Enter Power : "))        #3                                  #3 * 3 * 3
+# if (n<=0 or p<=0):
+#     print("Invalid Input")
+# else:
+#     result = 1
+#     i = 1
+#     while (i <= p):
+#         result *= n
+#         i += 1
+# print(result)
+
+
+
+# Take two positive integers as input. Check whether the second number is the exact reverse of
+# the first one. Do not use any inbuilt reverse functions.
+
+og = int(input("Enter First Number : "))
+rev = int(input("Enter Second Number : "))
+if (og<= 0 or rev<=0):
+    print("Invalid Number")
 else:
-    result = 1
-    i = 1
-    while (i <= p):
-        result *= n
-        i += 1
-print(result)
+    reverse = 0
+    while(og>0):
+        digit = og % 10
+        reverse = reverse * 10 + digit
+        og //= 10
+if (reverse == rev):
+    print("Exact Reverse")
+else:
+    print("Not Exact Reverse")
