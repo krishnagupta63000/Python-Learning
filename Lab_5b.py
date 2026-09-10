@@ -12,10 +12,27 @@
 
 # Q2, Take a positive integer as input and display the product of its digits. The number can be of any
 # length.
-n = int(input("Enter N : "))
-product = 1
-while (n>0):
-    digit = n % 10
-    product = product * digit
-    n = n // 10
-print(product)
+# n = int(input("Enter N : "))
+# product = 1
+# while (n>0):
+#     digit = n % 10
+#     product = product * digit
+#     n = n // 10
+# print(product)
+
+
+#Q4, Take a positive integer N and a positive integer P as input and find the value of N raised to the
+# power P using a while loop. Do not use the ** operator or the pow() function. Handle invalid
+# cases as well.
+
+n = int(input("Enter Number : "))      #3
+p = int(input("Enter Power : "))        #3                                  #3 * 3 * 3
+if (n<=0 or p<=0):
+    print("Invalid Input")
+else:
+    result = 1
+    i = 1
+    while (i <= p):
+        result *= n
+        i += 1
+print(result)
