@@ -8,7 +8,19 @@
 # In the second case every post is divisible by 1, so no post is working and the first line of the output stays
 # empty.
 
+X = int(input("Enter X : "))
+Y = int(input("Enter Y : "))
+N = int(input("Enter N : "))
 
+count = 0
+
+for i in range(X, Y):
+    if i % N != 0:
+        print(i, end=" ")
+        count += 1
+
+print()
+print(count, "Count")
 
 # Q2, Take a positive integer as input and display the product of its digits. The number can be of any
 # length.
@@ -42,20 +54,20 @@
 #Q4, Take two positive integers as input. Check whether the second number is the exact reverse of
 # the first one. Do not use any inbuilt reverse functions.
 
-og = int(input("Enter First Number : "))
-rev = int(input("Enter Second Number : "))
-if (og<= 0 or rev<=0):
-    print("Invalid Number")
-else:
-    reverse = 0
-    while(og>0):
-        digit = og % 10
-        reverse = reverse * 10 + digit
-        og //= 10
-if (reverse == rev):
-    print("Exact Reverse")
-else:
-    print("Not Exact Reverse")
+# og = int(input("Enter First Number : "))
+# rev = int(input("Enter Second Number : "))
+# if (og<= 0 or rev<=0):
+#     print("Invalid Number")
+# else:
+#     reverse = 0
+#     while(og>0):
+#         digit = og % 10
+#         reverse = reverse * 10 + digit
+#         og //= 10
+# if (reverse == rev):
+#     print("Exact Reverse")
+# else:
+#     print("Not Exact Reverse")
 
 
 #Q3, Canteen Billing Counter. The canteen cashier enters the amount of every bill of the day one
@@ -68,21 +80,23 @@ else:
 # Constraints: 1 ≤ N ≤ 100000, at most 100 bills are entered, every bill amount is a positive
 # integer.
 
-N = int(input())
+# N = int(input())
 
-large = 0
-small = 0
+# large = 0
+# small = 0
 
-while True:
-    bill = int(input())
+# while True:
+#     bill = int(input())
 
-    if bill == -999:
-        break
+#     if bill == -999:
+#         break
 
-    if bill > N:
-        large += 1
-    else:
-        small += 1
+#     if bill > N:
+#         large += 1
+#     else:
+#         small += 1
 
-print(large)
-print(small)
+# print(large)
+# print(small)
+
+
