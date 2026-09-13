@@ -8,19 +8,19 @@
 # In the second case every post is divisible by 1, so no post is working and the first line of the output stays
 # empty.
 
-X = int(input("Enter X : "))
-Y = int(input("Enter Y : "))
-N = int(input("Enter N : "))
+# X = int(input("Enter X : "))
+# Y = int(input("Enter Y : "))
+# N = int(input("Enter N : "))
 
-count = 0
+# count = 0
 
-for i in range(X, Y):
-    if i % N != 0:
-        print(i, end=" ")
-        count += 1
+# for i in range(X, Y):
+#     if i % N != 0:
+#         print(i, end=" ")
+#         count += 1
 
-print()
-print(count, "Count")
+# print()
+# print(count, "Count")
 
 # Q2, Take a positive integer as input and display the product of its digits. The number can be of any
 # length.
@@ -51,7 +51,7 @@ print(count, "Count")
 
 
 
-#Q4, Take two positive integers as input. Check whether the second number is the exact reverse of
+#Q5, Take two positive integers as input. Check whether the second number is the exact reverse of
 # the first one. Do not use any inbuilt reverse functions.
 
 # og = int(input("Enter First Number : "))
@@ -98,5 +98,18 @@ print(count, "Count")
 
 # print(large)
 # print(small)
+
+
+#Q6, Display the first N terms of the sequence of powers of 2. Do not use the ** operator or the
+# pow() function.
+# 1, 2, 4, 8, 16, 32, ….. till N terms
+
+n = int(input("Enter N : "))
+i = 1
+power = 1 
+while (i<=n):
+   print(power)
+   power = power * 2
+   i += 1
 
 
