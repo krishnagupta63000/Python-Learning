@@ -113,3 +113,32 @@ while (i<=n):
    i += 1
 
 
+# Take an integer as input and check whether it is a perfect number or not (a perfect number is
+# equal to the sum of all its divisors other than itself, for example 28 = 1 + 2 + 4 + 7 + 14). Handle
+# invalid conditions and make your code efficient by minimizing the number of loop iterations.
+
+n = int(input("Enter Number : "))
+
+if (n <= 0):
+    print("Invalid Number")
+
+elif (n == 1):
+    print("Not a Perfect Number")
+
+else:
+    sum = 1
+    i = 2
+
+    while (i * i <= n):
+        if (n % i == 0):
+            sum += i
+
+            if (i != n // i):
+                sum += n // i
+
+        i += 1
+
+    if (sum == n):
+        print("Perfect Number")
+    else:
+        print("Not a Perfect Number")
