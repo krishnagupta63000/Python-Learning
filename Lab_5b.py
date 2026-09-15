@@ -142,3 +142,27 @@ else:
         print("Perfect Number")
     else:
         print("Not a Perfect Number")
+
+
+
+# Take a positive integer N as input and display the following pattern of N lines:
+# \*
+# \* \*
+# \* \* \*
+# \* \* \* \*
+# (till N lines)
+
+
+n = int(input("Enter N : "))
+
+if (n <= 0):
+    print("Invalid Number")
+else:
+    i = 1
+    while (i <= n):
+        j = 1
+        while (j <= i):
+            print("*", end=" ")
+            j += 1
+        print()
+        i += 1
