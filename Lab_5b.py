@@ -166,3 +166,25 @@ else:
             j += 1
         print()
         i += 1
+
+
+
+# Take a positive integer and a single digit D (0 to 9) as input. Count how many times the digit D
+# appears in the number. Do not convert the number into a string.
+
+
+
+number = int(input("Enter Number : "))
+D = int(input("Enter Digit : "))
+
+count = 0
+
+while number > 0:
+    digit = number % 10
+
+    if digit == D:
+        count = count + 1
+
+    number = number // 10
+
+print(count)
