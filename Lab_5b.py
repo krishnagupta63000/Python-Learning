@@ -188,3 +188,28 @@ while number > 0:
     number = number // 10
 
 print(count)
+
+
+# Take a positive integer N as input and display all its divisors, one in each line, followed by the
+# total count of divisors. Using this count, print whether N is a prime number or not.
+
+
+
+N = int(input("Enter N : "))
+
+if N <= 0:
+    print("Invalid Number")
+else:
+    count = 0
+
+    for i in range(1, N + 1):
+        if N % i == 0:
+            print(i)
+            count += 1
+
+    print("Total divisors :", count)
+
+    if count == 2:
+        print("Prime Number")
+    else:
+        print("Not a Prime Number")
