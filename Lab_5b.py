@@ -213,3 +213,29 @@ else:
         print("Prime Number")
     else:
         print("Not a Prime Number")
+
+
+
+
+'''Write a program that prompts the user to enter the centre of a circle (x1, y1), its radius r, and a
+second point (x2, y2), and displays whether the second point lies inside, on the boundary of, or
+outside the circle. The formula for computing the distance between two points is
+distance = √[(x2 – x1)2 + (y2 – y1)2]'''
+
+import math
+
+x1 = float(input("Enter x1: "))
+y1 = float(input("Enter y1: "))
+r = float(input("Enter radius: "))
+
+x2 = float(input("Enter x2: "))
+y2 = float(input("Enter y2: "))
+
+distance = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+
+if distance < r:
+    print("Point is inside the circle")
+elif distance == r:
+    print("Point is on the boundary of the circle")
+else:
+    print("Point is outside the circle")
