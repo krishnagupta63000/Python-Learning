@@ -18,3 +18,14 @@ n = int(input("Enter N: "))
 while n >= 1:
     print(n)
     n -= 1
+
+
+
+# WAP to print all alphabets from a to z. - using while loop Hint:chr()
+
+
+i = 97
+
+while i <= 122:
+    print(chr(i))
+    i += 1
