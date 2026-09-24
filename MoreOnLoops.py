@@ -29,3 +29,14 @@ i = 97
 while i <= 122:
     print(chr(i))
     i += 1
+
+
+# WAP to print all even numbers between 1 to 100. - using while loop
+
+i = 1
+
+while i <= 100:
+    if i % 2 == 0:
+        print(i)
+    i += 1
+    
