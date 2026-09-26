@@ -40,16 +40,27 @@
 # print(total)
 
 
-x = -2**2
-if not x > 0:
-    if x == -4:
-        if not (-x == 4):
-            print("A")
+# x = -2**2
+# if not x > 0:
+#     if x == -4:
+#         if not (-x == 4):
+#             print("A")
+#         else:
+#             print("B")
+#     else:
+#         print("C")
+# elif x == 4:
+#     print("D")
+# else:
+#     print("E")
+
+
+for row in range (1,6):
+    for pos in range(1,row+1):
+        if pos == 1 or pos == row:
+            print("D", end = " ")
+        elif(row + pos) % 2 == 0:
+            print("R", end = " ")
         else:
-            print("B")
-    else:
-        print("C")
-elif x == 4:
-    print("D")
-else:
-    print("E")
+            print("Y", end = " ")
+    print()
