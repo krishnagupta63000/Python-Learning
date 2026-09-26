@@ -11,10 +11,17 @@
 
 
 
-a = 256
-b = 77
-print(a & b)
-print(a | b)
-print(a ^ b)
-print(~a)
+# a = 256
+# b = 77
+# print(a & b)
+# print(a | b)
+# print(a ^ b)
+# print(~a)
 
+
+x = 6
+y = 3
+if x % y == 0 or x // y == 2 and x * y > 20:
+    print("True Branch")
+else:
+    print("False Branch")
