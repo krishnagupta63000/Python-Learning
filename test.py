@@ -19,9 +19,24 @@
 # print(~a)
 
 
-x = 6
-y = 3
-if x % y == 0 or x // y == 2 and x * y > 20:
-    print("True Branch")
+# x = 6
+# y = 3
+# if x % y == 0 or x // y == 2 and x * y > 20:
+#     print("True Branch")
+# else:
+#     print("False Branch")
+
+
+x = 0.1
+total = 0
+for i in range(10):
+    total += x
+if total == 1.0:
+    print("Exact")
+elif total > 1.0:
+    print("Slightly Over")
 else:
-    print("False Branch")
+    print("Slightly Under")
+print(total)
+
+
