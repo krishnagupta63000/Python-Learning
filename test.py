@@ -27,16 +27,29 @@
 #     print("False Branch")
 
 
-x = 0.1
-total = 0
-for i in range(10):
-    total += x
-if total == 1.0:
-    print("Exact")
-elif total > 1.0:
-    print("Slightly Over")
+# x = 0.1
+# total = 0
+# for i in range(10):
+#     total += x
+# if total == 1.0:
+#     print("Exact")
+# elif total > 1.0:
+#     print("Slightly Over")
+# else:
+#     print("Slightly Under")
+# print(total)
+
+
+x = -2**2
+if not x > 0:
+    if x == -4:
+        if not (-x == 4):
+            print("A")
+        else:
+            print("B")
+    else:
+        print("C")
+elif x == 4:
+    print("D")
 else:
-    print("Slightly Under")
-print(total)
-
-
+    print("E")
