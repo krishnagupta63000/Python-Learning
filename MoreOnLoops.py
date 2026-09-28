@@ -48,3 +48,18 @@ i = 1
 while i <= 100:
     print(i)
     i = i + 2
+
+
+# WAP to find sum of all natural numbers between 1 to n.
+
+
+n = int(input("Enter n: "))
+
+i = 1
+sum = 0
+
+while i <= n:
+    sum = sum + i
+    i = i + 1
+
+print("Sum =", sum)
