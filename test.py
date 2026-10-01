@@ -55,12 +55,32 @@
 #     print("E")
 
 
-for row in range (1,6):
-    for pos in range(1,row+1):
-        if pos == 1 or pos == row:
-            print("D", end = " ")
-        elif(row + pos) % 2 == 0:
-            print("R", end = " ")
-        else:
-            print("Y", end = " ")
-    print()
+# for row in range (1,6):
+#     for pos in range(1,row+1):
+#         if pos == 1 or pos == row:
+#             print("D", end = " ")
+#         elif(row + pos) % 2 == 0:
+#             print("R", end = " ")
+#         else:
+#             print("Y", end = " ")
+#     print()
+
+
+str = input()
+vowels = 0
+consonants = 0
+space = 0
+digits = 0
+for ch in str :
+    if ch in "AEIOUaeiou":
+        vowels += 1
+    elif (ch == " "):
+        space += 1
+    elif (ch>"0" and ch<"9"):
+        digits += 1
+    else:
+        consonants += 1
+print("Vowels:", vowels)
+print("Consonants:", consonants) 
+print("Digits:", digits)
+print("Spaces:", space)
