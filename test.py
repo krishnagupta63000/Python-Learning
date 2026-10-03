@@ -153,7 +153,20 @@
 #         print(i+1, end = " ")
 #     print()
 
-for i in range (5):
-    for j in range (i+1):
-        print(chr(i+65), end = " ")
+# for i in range (5):
+#     for j in range (i+1):
+#         print(chr(i+65), end = " ")
+#     print()
+
+
+# for i in range(4):
+#     n = 1
+#     for j in range (i+1):
+#         print(n, end = " ")
+#         n += 1
+#     print()
+
+for i in range (4):
+    for j in range (i+1, 0, -1):
+        print(j, end=" ")
     print()
