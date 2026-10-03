@@ -133,9 +133,15 @@
 #     print()
 
 
-n = 65
-for i in range (3):
-    for j in range (3):
-        print(chr(n), end = " ")
-        n += 1
+# n = 65
+# for i in range (3):
+#     for j in range (3):
+#         print(chr(n), end = " ")
+#         n += 1
+#     print()
+
+n = int(input("Enter N: "))
+for i in range (n):
+    for j in range (i+1):
+        print("*", end = " ")
     print()
