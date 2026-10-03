@@ -171,9 +171,17 @@
 #         print(j, end=" ")
 #     print()
 
-n = 1
+# n = 1
+# for i in range (4):
+#     for j in range (i+1):
+#         print(n, end = " ")
+#         n += 1
+#     print()
+
+
+n = 65
 for i in range (4):
     for j in range (i+1):
-        print(n, end = " ")
+        print(chr(n), end = " ")
         n += 1
     print()
