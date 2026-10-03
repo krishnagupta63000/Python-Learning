@@ -66,21 +66,30 @@
 #     print()
 
 
-str = input()
-vowels = 0
-consonants = 0
-space = 0
-digits = 0
-for ch in str :
-    if ch in "AEIOUaeiou":
-        vowels += 1
-    elif (ch == " "):
-        space += 1
-    elif (ch>"0" and ch<"9"):
-        digits += 1
-    else:
-        consonants += 1
-print("Vowels:", vowels)
-print("Consonants:", consonants) 
-print("Digits:", digits)
-print("Spaces:", space)
+# str = input()
+# vowels = 0
+# consonants = 0
+# space = 0
+# digits = 0
+# for ch in str :
+#     if ch in "AEIOUaeiou":
+#         vowels += 1
+#     elif (ch == " "):
+#         space += 1
+#     elif (ch>"0" and ch<"9"):
+#         digits += 1
+#     else:
+#         consonants += 1
+# print("Vowels:", vowels)
+# print("Consonants:", consonants) 
+# print("Digits:", digits)
+# print("Spaces:", space)
+
+
+
+for i in range (5):
+    for j in range (i+1):
+        print("*", end= " ")
+    print()
+
+              
