@@ -125,9 +125,17 @@
 
 
 
-for i in range(4):
-    num = 1
-    for j in range (4):
-        print(num, end = " ")
-        num += 1
+# for i in range(4):
+#     num = 1
+#     for j in range (4):
+#         print(num, end = " ")
+#         num += 1
+#     print()
+
+
+n = 65
+for i in range (3):
+    for j in range (3):
+        print(chr(n), end = " ")
+        n += 1
     print()
