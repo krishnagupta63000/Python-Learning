@@ -140,8 +140,20 @@
 #         n += 1
 #     print()
 
-n = int(input("Enter N: "))
-for i in range (n):
+# n = int(input("Enter N: "))
+# for i in range (n):
+#     for j in range (i+1):
+#         print("*", end = " ")
+#     print()
+
+
+# n = 1
+# for i in range (4):
+#     for j in range (i+1):
+#         print(i+1, end = " ")
+#     print()
+
+for i in range (5):
     for j in range (i+1):
-        print("*", end = " ")
+        print(chr(i+65), end = " ")
     print()
