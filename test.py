@@ -206,11 +206,27 @@
 #     print()
 
 
-d = 1
+
+# n = int(input())
+# print()
+# for i in range (n):
+#     d = 1
+#     for j in range (i+1):
+#         print(d, end = " ")
+#         d += 1
+#     print()
+
+
+
 n = int(input())
 print()
-for i in range (n):
-    for j in range (i+1):
+i = 0
+while (i<n):
+    j = 0
+    d = 1
+    while (j < (i+1)):
         print(d, end = " ")
         d += 1
+        j += 1
+    i += 1
     print()
