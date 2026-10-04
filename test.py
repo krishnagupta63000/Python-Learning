@@ -218,15 +218,23 @@
 
 
 
+# n = int(input())
+# print()
+# i = 0
+# while (i<n):
+#     j = 0
+#     d = 1
+#     while (j < (i+1)):
+#         print(d, end = " ")
+#         d += 1
+#         j += 1
+#     i += 1
+#     print()
+
+
 n = int(input())
 print()
-i = 0
-while (i<n):
-    j = 0
-    d = 1
-    while (j < (i+1)):
-        print(d, end = " ")
-        d += 1
-        j += 1
-    i += 1
+for i in range (n):
+    for j in range (n-i):
+        print("*", end = " ")
     print()
