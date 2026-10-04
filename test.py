@@ -240,12 +240,22 @@
 #     print()
 
 
+# n = int(input())
+# i = 0
+# while (i<n):
+#     j = 0
+#     while(j < (n-i)):
+#         print("*", end = " ")
+#         j += 1
+#     i += 1
+#     print()
+
+
 n = int(input())
-i = 0
-while (i<n):
-    j = 0
-    while(j < (n-i)):
+print()
+for i in range (n):
+    for j in range (n - i):
+        print(" ", end = " ")
+    for j in range (i+1):
         print("*", end = " ")
-        j += 1
-    i += 1
     print()
