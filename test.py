@@ -196,11 +196,21 @@
 #     print()
 
 
-n = 0
-for i in range (4):
-    for j in range (i):
-        print(" ", end = " ")
-    n += 1
-    for j in range (4-i):
-        print(n, end = " ")
+# n = 0
+# for i in range (4):
+#     for j in range (i):
+#         print(" ", end = " ")
+#     n += 1
+#     for j in range (4-i):
+#         print(n, end = " ")
+#     print()
+
+
+d = 1
+n = int(input())
+print()
+for i in range (n):
+    for j in range (i+1):
+        print(d, end = " ")
+        d += 1
     print()
