@@ -232,9 +232,20 @@
 #     print()
 
 
+# n = int(input())
+# print()
+# for i in range (n):
+#     for j in range (n-i):
+#         print("*", end = " ")
+#     print()
+
+
 n = int(input())
-print()
-for i in range (n):
-    for j in range (n-i):
+i = 0
+while (i<n):
+    j = 0
+    while(j < (n-i)):
         print("*", end = " ")
+        j += 1
+    i += 1
     print()
