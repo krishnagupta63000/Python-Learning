@@ -179,9 +179,24 @@
 #     print()
 
 
-n = 65
+# n = 65
+# for i in range (4):
+#     for j in range (i+1):
+#         print(chr(n), end = " ")
+#         n += 1
+#     print()
+
+
+# n = 65
+# for i in range (4):
+#     n += 1
+#     for j in range (i+1, 0, -1):
+#         print(chr(n-1), end = " ")
+#         n +=1 
+#     print()
+
+n = 64
 for i in range (4):
-    for j in range (i+1):
-        print(chr(n), end = " ")
-        n += 1
+    for j in range (i+1, 0, -1):
+        print(chr(n+j), end=" ")
     print()
