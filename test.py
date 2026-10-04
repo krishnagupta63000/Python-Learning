@@ -195,8 +195,12 @@
 #         n +=1 
 #     print()
 
-n = 64
+
+n = 0
 for i in range (4):
-    for j in range (i+1, 0, -1):
-        print(chr(n+j), end=" ")
+    for j in range (i):
+        print(" ", end = " ")
+    n += 1
+    for j in range (4-i):
+        print(n, end = " ")
     print()
