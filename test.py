@@ -251,66 +251,27 @@
 #     print()
 
 
+# n = int(input())
+# for i in range (4):
+#     for j in range (4 - i):
+#         print(" ", end = " ")
+#     for j in range (i+1):
+#         print("*", end = " ")
+#     print()
+
+
 n = int(input())
-for i in range (4):
-    for j in range (4 - i):
+i = 0
+while (i<n):
+    j = 0
+    while (j<(n-i)):
         print(" ", end = " ")
-    for j in range (i+1):
+        j += 1
+    j = 0
+    while (j < (i+1)):
         print("*", end = " ")
+        j += 1
+    i+=1 
     print()
 
 
-# n = int(input())
-# i = 0
-# while (i<n):
-#     j = 0
-#     while (j<(n-i)):
-#         print(" ", end = " ")
-#         j += 1
-#     j = 0
-#     while (j < (i+1)):
-#         print("*", end = " ")
-#         j += 1
-    # i+=1 
-    # print()
-
-
-# for i in range(4):
-#     for j in range (4-i-1):
-#         print(" ", end = " ")
-#     n = 1 
-#     for j in range (i+1):
-#         print(n, end = " ")
-#         n += 1
-#     for j in range (i):
-#             print(n, end = " ")
-#             n += 1
-#     print()
-
-
-
-# for i in range(4):
-#     for j in range (3-i):
-#         print(" ", end = " ")
-#     for j in range (i+1):
-#         print("*", end = " ")
-#     for j in range (i):
-#          print("*", end = " ")
-#     print()
-
-
-# n = 0
-# for i in range (4):
-#     n += 1
-#     for j in range (4-n):
-#         print(" ", end = " ")
-#     for j in range (n):
-#         print(n, end = " ")
-#     print()
-
-# n = 1
-# for i in range (4):
-#     for j in range(i+1):
-#         print(n, end = " ")
-#         n += 1
-#     print()
