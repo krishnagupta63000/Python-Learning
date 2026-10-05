@@ -298,16 +298,22 @@
 #          print("*", end = " ")
 #     print()
 
-n = 0
+# n = 0
+# for i in range (4):
+#     n += 1
+#     for j in range (4-n):
+#         print(" ", end = " ")
+#     for j in range (n):
+#         print(n, end = " ")
+#     print()
+
+
+n = 1
 for i in range (4):
-    n += 1
-    for j in range (4-n):
-        print(" ", end = " ")
-    for j in range (n):
+    for j in range(i+1):
         print(n, end = " ")
+        n += 1
     print()
-
-
 
 
 
