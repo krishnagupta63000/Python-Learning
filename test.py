@@ -320,15 +320,59 @@
 #         print("*", end = " ")
 #     print()
 
-for k in range (4):
-    print()
-    print()
-    for i in range (6):
+# for k in range (4):
+#     print()
+#     print()
+#     for i in range (6):
         
-        for j in range (7):
-            if (i == 0 and j % 3 != 0) or (i == 1 and j % 3 == 0) or (i - j == 2) or (i + j == 8):
-                print('*', end = " ")
-            else:
-                print(" ", end = " ")
-        print()
-    print(end = " ")
+#         for j in range (7):
+#             if (i == 0 and j % 3 != 0) or (i == 1 and j % 3 == 0) or (i - j == 2) or (i + j == 8):
+#                 print('*', end = " ")
+#             else:
+#                 print(" ", end = " ")
+#         print()
+#     print(end = " ")
+
+
+# s = input()
+# char = 0
+# digits = 0
+# spaces = 0
+# sp_char = 0
+# for ch in s:
+#     if ch in "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz":
+#         char += 1
+#     elif ch == " ":
+#         spaces += 1
+#     elif ch in "1234567890":
+#         digits += 1
+#     else:
+#         sp_char += 1
+# print()
+# print("char: ", char)
+# print("spaces: ", spaces)
+# print("digits: ", digits)
+# print("special: ", sp_char)
+
+
+
+# s = "PROGRAMMING"
+# for i in range(len(s)):
+#     if (i % 2 == 0):
+#         print(s[i], end = " ")
+
+# ch = "PROGRAMMING"
+# rev = ""
+# for i in ch:
+#     rev = i + rev
+# print(rev)
+
+# ch = "Programing"
+# for i in range (len(ch)-1, 0, -1):
+#     print(ch[i-1], end = "")
+
+
+for i in range (5):
+    for j in range (5):
+        print("*", end = " ")
+    print()
