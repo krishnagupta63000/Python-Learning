@@ -421,7 +421,15 @@
 #     print()
 
 
+# for i in range (5):
+#     for j in range (i + 1):
+#         print("*", end = " ")
+#     print()
+
 for i in range (5):
     for j in range (i + 1):
-        print("*", end = " ")
+        if (j == 0 or j == i or i == 4 ):
+            print("*", end = " ")
+        else:
+            print(" ", end = " ")
     print()
