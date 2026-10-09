@@ -442,24 +442,43 @@
 #         print("*", end = " ")
 #     print()
 
-for i in range (5):
-    for j in range (4-i):
-        print(" ", end = " ")
-    for j in range (i + 1):
-        if (i == 4 or j == 4-i or j == 4):
-            print("*", end = "")
-        else:
-            print(" ", end = "")
-    print()
+# for i in range (5):
+#     for j in range (4-i):
+#         print(" ", end = " ")
+#     for j in range (i + 1):
+#         if (i == 4 or j == 4-i or j == 4):
+#             print("*", end = "")
+#         else:
+#             print(" ", end = "")
+#     print()
 
 # WAP to count number of digits in a number.
 
-n = int(input("Enter a number: "))
+# n = int(input("Enter a number: "))
 
-count = 0
+# count = 0
 
-while n > 0:
-    n = n // 10
-    count += 1
+# while n > 0:
+#     n = n // 10
+#     count += 1
 
-print("Number of digits =", count)
+# print("Number of digits =", count)
+
+
+# marks = [76, 67, 90, 69, 58]
+# total = 0
+# # for m in marks:
+# #     total += m
+# # print(total/len(marks))
+# for i in range (len(marks)):
+#     total += marks[i]
+# pri
+
+
+marks = [76, 67, 90, 69, 58]
+max = 0
+for m in marks:
+    if (m>max):
+        max = m 
+print(max)
+     
