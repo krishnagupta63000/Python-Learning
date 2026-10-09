@@ -465,22 +465,22 @@
 # print("Number of digits =", count)
 
 
-# marks = [76, 67, 90, 69, 58]
-# total = 0
-# # for m in marks:
-# #     total += m
-# # print(total/len(marks))
-# for i in range (len(marks)):
-#     total += marks[i]
-# pri
-
-
 marks = [76, 67, 90, 69, 58]
-max = 0
-for m in marks:
-    if (m>max):
-        max = m 
-print(max)
+total = 0
+# for m in marks:
+#     total += m
+# print(total/len(marks))
+for i in range (len(marks)):
+    total += marks[i]
+print(total)
+
+
+# marks = [76, 67, 90, 69, 58]
+# max = 0
+# for m in marks:
+#     if (m>max):
+#         max = m 
+# print(max)
 
 # marks = [76, 67, 90, 69, 58]
 # marks.append(65)
