@@ -482,14 +482,19 @@
 #         max = m 
 # print(max)
 
-marks = [76, 67, 90, 69, 58]
-marks.append(65)
-marks.insert(1, 82)
-marks.remove(69)
-marks.sort()
-marks.reverse()
-for m in marks:
-    if(m<75):
-        marks.append(m)
-        print(marks) 
-    
+# marks = [76, 67, 90, 69, 58]
+# marks.append(65)
+# marks.insert(1, 82)
+# marks.remove(69)
+# marks.sort()
+# marks.reverse()
+# for m in marks:
+#     if(m<75):
+#         marks.append(m)
+#         print(marks) 
+     
+for i in range (5):
+    for j in range(5-i):
+        print("*", end = " ")
+    print()
+
