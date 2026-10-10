@@ -104,44 +104,44 @@
 # pow() function.
 # 1, 2, 4, 8, 16, 32, ….. till N terms
 
-n = int(input("Enter N : "))
-i = 1
-power = 1 
-while (i<=n):
-   print(power)
-   power = power * 2
-   i += 1
+# n = int(input("Enter N : "))
+# i = 1
+# power = 1 
+# while (i<=n):
+#    print(power)
+#    power = power * 2
+#    i += 1
 
 
 # Take an integer as input and check whether it is a perfect number or not (a perfect number is
 # equal to the sum of all its divisors other than itself, for example 28 = 1 + 2 + 4 + 7 + 14). Handle
 # invalid conditions and make your code efficient by minimizing the number of loop iterations.
 
-n = int(input("Enter Number : "))
+# n = int(input("Enter Number : "))
 
-if (n <= 0):
-    print("Invalid Number")
+# if (n <= 0):
+#     print("Invalid Number")
 
-elif (n == 1):
-    print("Not a Perfect Number")
+# elif (n == 1):
+#     print("Not a Perfect Number")
 
-else:
-    sum = 1
-    i = 2
+# else:
+#     sum = 1
+#     i = 2
 
-    while (i * i <= n):
-        if (n % i == 0):
-            sum += i
+#     while (i * i <= n):
+#         if (n % i == 0):
+#             sum += i
 
-            if (i != n // i):
-                sum += n // i
+#             if (i != n // i):
+#                 sum += n // i
 
-        i += 1
+#         i += 1
 
-    if (sum == n):
-        print("Perfect Number")
-    else:
-        print("Not a Perfect Number")
+#     if (sum == n):
+#         print("Perfect Number")
+#     else:
+#         print("Not a Perfect Number")
 
 
 
@@ -153,19 +153,19 @@ else:
 # (till N lines)
 
 
-n = int(input("Enter N : "))
+# n = int(input("Enter N : "))
 
-if (n <= 0):
-    print("Invalid Number")
-else:
-    i = 1
-    while (i <= n):
-        j = 1
-        while (j <= i):
-            print("*", end=" ")
-            j += 1
-        print()
-        i += 1
+# if (n <= 0):
+#     print("Invalid Number")
+# else:
+#     i = 1
+#     while (i <= n):
+#         j = 1
+#         while (j <= i):
+#             print("*", end=" ")
+#             j += 1
+#         print()
+#         i += 1
 
 
 
@@ -174,20 +174,20 @@ else:
 
 
 
-number = int(input("Enter Number : "))
-D = int(input("Enter Digit : "))
+# number = int(input("Enter Number : "))
+# D = int(input("Enter Digit : "))
 
-count = 0
+# count = 0
 
-while number > 0:
-    digit = number % 10
+# while number > 0:
+#     digit = number % 10
 
-    if digit == D:
-        count = count + 1
+#     if digit == D:
+#         count = count + 1
 
-    number = number // 10
+#     number = number // 10
 
-print(count)
+# print(count)
 
 
 # Take a positive integer N as input and display all its divisors, one in each line, followed by the
@@ -195,24 +195,24 @@ print(count)
 
 
 
-N = int(input("Enter N : "))
+# N = int(input("Enter N : "))
 
-if N <= 0:
-    print("Invalid Number")
-else:
-    count = 0
+# if N <= 0:
+#     print("Invalid Number")
+# else:
+#     count = 0
 
-    for i in range(1, N + 1):
-        if N % i == 0:
-            print(i)
-            count += 1
+#     for i in range(1, N + 1):
+#         if N % i == 0:
+#             print(i)
+#             count += 1
 
-    print("Total divisors :", count)
+#     print("Total divisors :", count)
 
-    if count == 2:
-        print("Prime Number")
-    else:
-        print("Not a Prime Number")
+#     if count == 2:
+#         print("Prime Number")
+#     else:
+#         print("Not a Prime Number")
 
 
 
@@ -222,20 +222,20 @@ second point (x2, y2), and displays whether the second point lies inside, on the
 outside the circle. The formula for computing the distance between two points is
 distance = √[(x2 – x1)2 + (y2 – y1)2]'''
 
-import math
+# import math
 
-x1 = float(input("Enter x1: "))
-y1 = float(input("Enter y1: "))
-r = float(input("Enter radius: "))
+# x1 = float(input("Enter x1: "))
+# y1 = float(input("Enter y1: "))
+# r = float(input("Enter radius: "))
 
-x2 = float(input("Enter x2: "))
-y2 = float(input("Enter y2: "))
+# x2 = float(input("Enter x2: "))
+# y2 = float(input("Enter y2: "))
 
-distance = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+# distance = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
 
-if distance < r:
-    print("Point is inside the circle")
-elif distance == r:
-    print("Point is on the boundary of the circle")
-else:
-    print("Point is outside the circle")
+# if distance < r:
+#     print("Point is inside the circle")
+# elif distance == r:
+#     print("Point is on the boundary of the circle")
+# else:
+#     print("Point is outside the circle")
