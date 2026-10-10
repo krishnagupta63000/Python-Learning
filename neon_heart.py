@@ -17,10 +17,10 @@ clock = pygame.time.Clock()
 
 phrases = [
     "I love you", "Ti amo", "Je t'aime",
-    "Te amo", "Ich liebe dich",
-    "Seni seviyorum", "Aku cinta kamu",
-    "Kocham cie", "Anh yeu em",
-    "Я тебя люблю", "사랑해"
+        "Te amo", "Ich liebe dich",
+        "Seni seviyorum", "Aku cinta kamu",
+        "Kocham cie", "Anh yeu em",
+        "Я тебя люблю", "사랑해"
 ]
 
 # Check whether a point is inside the heart
