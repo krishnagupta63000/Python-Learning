@@ -187,4 +187,5 @@ N x 20 = 20N'''
 n = int(input("Enter n : "))
 if (n>0):
     for i in range(1,11):
+        print(f" {n} x {i} = {i}{n}")
         print(n,"x",i,"=", i,n)
