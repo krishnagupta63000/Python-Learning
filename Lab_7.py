@@ -18,28 +18,27 @@
 # number of times that word occurs in the string. Do this by using inbuilt string functions and then
 # without using inbuilt string functions.
 
-str = "My name is Krishna"
+# str = "My name is Krishna"
 
-word = "Krishna"
-count =str.count(word)
-print("count:",count)
+# word = "Krishna"
+# count =str.count(word)
+# print("count:",count)
     
 
 
 # Q4. program that takes a string as input and checks where the string is a pangram or not.
 # Note : Pangrams are words or sentences containing every letter of the alphabet at least once.
 # For example : "The quick brown fox jumps over the lazy dog"
-# str = "The quick brown fox jumps over the lazy dog"
-# str.lower
-# count = 0
-# for ch in str:
-#     if ch in "qwertyuiopasdfghjklzxcvbnm":
-#         count += 1
-#         r
-# if (count > 25):
-#     print ("Pangram")
-# else:
-#     print("Not a Pangram")
+str = "The quick brown fox jumps over the lazy dog"
+str.lower
+s = ''
+count = 0
+for ch in "qwertyuiopasdfghjklzxcvbnm":
+    if ch not in str:
+        print("Not a Pangram")
+        break
+else:
+    print("Pangram")
 
 
 # The Caesar cipher is a simple encryption technique that was used by Julius Caesar to send secret
