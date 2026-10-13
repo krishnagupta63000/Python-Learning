@@ -1,5 +1,5 @@
 """
-Love Heart (v9)
+Love Heart (v10)
  
 A red "I love you" in many languages builds a heart, one word at a time.
 The heart has the exact outline of the reference image.
@@ -76,7 +76,7 @@ BASE_STEP_MS = 40                   # previous version: one new word every 40 ms
 WORD_STEP_MS = BASE_STEP_MS / SPEED # 80 ms between one word and the next
 FADE_MS = 500                       # time for one word to fade in and settle
 TWINKLE_MS = 420                    # time for one "Je t'aime" sparkle
-TWINKLE_COOLDOWN_MS = (600, 1800)   # random pause between sparkles
+TWINKLE_COOLDOWN_MS = (150, 600)    # random pause between sparkles (shorter = more frequent)
 FRAME_MS = 16                       # about 60 frames per second
  
 PHRASES = [
@@ -507,4 +507,3 @@ def main():
  
 if __name__ == "__main__":
     main()
- 
