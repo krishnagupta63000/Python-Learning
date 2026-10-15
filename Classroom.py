@@ -35,4 +35,21 @@
 # star = [j for i in range(n) for j in range(n-i)]
 # print(star)
 
-[print("* "*n) for n in range (1, 10)]
+# [print("* "*n) for n in range (1, 10)]
+
+# l = []
+# n = 5
+# for i in range (n):
+#     l.append(int(input()))
+# product = 1
+# for j in l:
+#     product *= l
+# print(product)
+
+
+l = [8, 5, 3, 1, 5]
+for i in range(len(l)):
+    for j in range(len(l) - (i+1)):
+        if (l[j+1] < l[j]):
+            l[j+1], l[j] = l[j], l[j+1]
+print(l)
