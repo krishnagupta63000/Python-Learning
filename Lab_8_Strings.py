@@ -1,7 +1,7 @@
 # Q1. Read a string and count how many characters in it are vowels, consonants, digits, spaces and
 # other symbols.
 
-s = input().lower()
+'''s = input().lower()
 vovels = 0
 digits = 0
 consonants = 0
@@ -22,4 +22,19 @@ print(f"Vovals: {vovels}")
 print(f"Consonants: {consonants}")
 print(f"Digits: {digits}")
 print(f"Spaces: {spaces}")
-print(f"Others {sp_ch}")
+print(f"Others {sp_ch}")'''
+
+
+# Q2. Read a string and rewrite it so that the characters at even positions (0, 2, 4, …) are in
+# uppercase and those at odd positions are in lowercase. Characters that are not letters stay
+# unchanged but still occupy a position.
+
+s = input()
+for i in range(len(s)):
+    if (s[i] == " "):
+        print(" ", end = '')
+        continue
+    elif (i%2==0):
+        print(s[i].upper(), end = '')
+    else:
+        print(s[i].lower(), end = '')
