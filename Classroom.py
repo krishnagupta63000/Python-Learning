@@ -8,12 +8,12 @@
 # print(len(set), "Classrooms")
 
 
-# marks = [76, 67, 90, 69, 67, 58]
-# marks.append(65)
-# marks.insert(1, 82)
-# marks.remove(58)
-# marks.pop()
-# print(marks)
+'''marks = [76, 67, 90, 69, 67, 58]
+marks.append(65)
+marks.insert(1, 82)
+marks.remove(58)
+marks.pop()
+print(marks)'''
 
 # fruits = ["Apple", "Banana", "Cherry"]
 # for ch in fruits:
@@ -37,14 +37,14 @@
 
 # [print("* "*n) for n in range (1, 10)]
 
-l = []
-n = 5
-for i in range (n):
-    l.append(int(input()))
-product = 1
-for j in l:
-    product *= l
-print(product)
+# l = []
+# n = 5
+# for i in range (n):
+#     l.append(int(input()))
+# product = 1
+# for j in l:
+#     product *= l
+# print(product)
 
 
 # l = [8, 5, 3, 1, 5]
@@ -53,3 +53,15 @@ print(product)
 #         if (l[j+1] < l[j]):
 #             l[j+1], l[j] = l[j], l[j+1]
 # print(l)
+
+# marks = (90, 88, 90)
+# print(marks.count(90))
+
+t = (10,)
+t1 = (20)
+t3 = ()
+# print(type(t))
+# print(type(t1))
+t4 = t3 + t
+print(t4)
+print(type(t4))
