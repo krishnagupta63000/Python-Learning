@@ -57,11 +57,18 @@ print(marks)'''
 # marks = (90, 88, 90)
 # print(marks.count(90))
 
-t = (10,)
-t1 = (20)
-t3 = ()
-# print(type(t))
-# print(type(t1))
-t4 = t3 + t
-print(t4)
-print(type(t4))
+# t = (10,)
+# t1 = (20)
+# t3 = ()
+# # print(type(t))
+# # print(type(t1))
+# t4 = t3 + t
+# print(t4)
+# print(type(t4))
+
+
+t1 = (10, 20)
+t2 = t1 + (30, )
+print(t2)
+t3 = t2[1:3]
+print(t3)
