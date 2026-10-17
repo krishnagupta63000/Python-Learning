@@ -505,9 +505,19 @@
 #         print("*", end = " ")
 #     print()
 
-n = 1
+# n = 1
+# for i in range (4):
+#     for j in range (i+1):
+#         print(n, end = " ")
+#         n += 1
+#     print()
+
+
+n = 0
 for i in range (4):
-    for j in range (i+1):
+    for j in range (i):
+        print(" ", end = " ")
+    n += 1
+    for j in range (4-i):
         print(n, end = " ")
-        n += 1
     print()
