@@ -45,7 +45,7 @@ for i in range(len(s)):
 # A password shorter than 8 characters is always WEAK. Otherwise it is STRONG if all four kinds
 # are present, MODERATE if two or three kinds are present, and WEAK if only one kind is
 # present.
-print()
+'''print()
 print("         Sign-up Page")
 print()
 
@@ -82,5 +82,29 @@ elif (typee == 2 or typee == 3) and count >= 8:
     print("Moderate Password")
 
 else:
-    print("Weak Password")
+    print("Weak Password")'''
 
+
+# Q4. Read a string and a single character. Print how many times the character occurs in the string
+# and the index of every occurrence. If it does not occur, print -1 for the positions.
+
+s = input()
+ch = input()
+count = 0
+pos = 0
+l = []
+for i in s:
+    if (ch == i):
+        count += 1
+        l.append(pos)
+# else:
+#     print("-1")
+    pos += 1
+if (count > 0):
+    print("Count:", count)
+    print()
+    print(f"Positions: {l}")
+    print()
+else:
+    print("Count:", count)
+    print(f"Position: -1")
