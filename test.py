@@ -513,11 +513,25 @@
 #     print()
 
 
-n = 0
-for i in range (4):
-    for j in range (i):
+# n = 0
+# for i in range (4):
+#     for j in range (i):
+#         print(" ", end = " ")
+#     n += 1
+#     for j in range (4-i):
+#         print(n, end = " ")
+#     print()
+
+
+s = int(input())
+for i in range (s):
+    for j in range (s-i):
         print(" ", end = " ")
-    n += 1
-    for j in range (4-i):
+    n = 1
+    for j in range (i+1):
         print(n, end = " ")
+        n+= 1
+    for j in range (i):
+        print(i, end = " ")
+        i -= 1
     print()
