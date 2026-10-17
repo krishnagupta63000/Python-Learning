@@ -29,7 +29,7 @@ print(f"Others {sp_ch}")'''
 # uppercase and those at odd positions are in lowercase. Characters that are not letters stay
 # unchanged but still occupy a position.
 
-s = input()
+'''s = input()
 for i in range(len(s)):
     if (s[i] == " "):
         print(" ", end = '')
@@ -37,4 +37,41 @@ for i in range(len(s)):
     elif (i%2==0):
         print(s[i].upper(), end = '')
     else:
-        print(s[i].lower(), end = '')
+        print(s[i].lower(), end = '')'''
+
+# Q3. JKLU's student portal is rolling out a new sign-up page. Before an account is created, the portal
+# rates the password the student types. It looks for four kinds of characters: an uppercase letter,
+# a lowercase letter, a digit, and a special character (anything that is not a letter, digit or space).
+# A password shorter than 8 characters is always WEAK. Otherwise it is STRONG if all four kinds
+# are present, MODERATE if two or three kinds are present, and WEAK if only one kind is
+# present.
+print()
+print("         Sign-up Page")
+print()
+s = input("Type Password: ")
+count = 0
+typee = 0
+for ch in s:
+    if ch in "QWERTYUIOPASDFGHJKLZXCVBNM":
+        count += 1
+        typee += 1
+        continue        
+    elif ch in "qwertyuiopasdfghjklzxcvbnm":
+        count += 1
+        typee += 1
+        continue
+    elif ch in "1234567890":
+        count += 1
+        typee += 1
+        continue
+    elif ch != " ":
+        count += 1
+        typee += 1
+        continue
+if (typee == 4 and count >= 8):
+    print("Strong Password")
+elif ():
+    print("Morderate Password")
+else:
+    print("Weak Password")
+
