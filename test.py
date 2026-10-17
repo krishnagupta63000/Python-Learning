@@ -523,15 +523,22 @@
 #     print()
 
 
-s = int(input())
-for i in range (s):
-    for j in range (s-i):
-        print(" ", end = " ")
-    n = 1
-    for j in range (i+1):
-        print(n, end = " ")
-        n+= 1
-    for j in range (i):
-        print(i, end = " ")
-        i -= 1
-    print()
+# s = int(input("\t\tEnter N: \n"))
+# for i in range (s):
+#     for j in range (s-i):
+#         print(" ", end = " ")
+#     n = 1
+#     for j in range (i+1):
+#         print(n, end = " ")
+#         n+= 1
+#     for j in range (i):
+#         print(i, end = " ")
+#         i -= 1
+#     print()
+
+# l = []
+# for i in range (5):
+#     s = input("Enter Fruit name: ")
+#     l.append(s)
+# print(l)
+
