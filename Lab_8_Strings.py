@@ -48,30 +48,39 @@ for i in range(len(s)):
 print()
 print("         Sign-up Page")
 print()
+
 s = input("Type Password: ")
 count = 0
-typee = 0
+uppercase = 0
+lowercase = 0
+digits = 0
+specialchar = 0
+
 for ch in s:
     if ch in "QWERTYUIOPASDFGHJKLZXCVBNM":
         count += 1
-        typee += 1
-        continue        
+        uppercase = 1
+
     elif ch in "qwertyuiopasdfghjklzxcvbnm":
         count += 1
-        typee += 1
-        continue
+        lowercase = 1
+
     elif ch in "1234567890":
         count += 1
-        typee += 1
-        continue
+        digits = 1
+
     elif ch != " ":
         count += 1
-        typee += 1
-        continue
-if (typee == 4 and count >= 8):
+        specialchar = 1
+
+typee = uppercase + lowercase + digits + specialchar
+
+if typee == 4 and count >= 8:
     print("Strong Password")
-elif ():
-    print("Morderate Password")
+
+elif (typee == 2 or typee == 3) and count >= 8:
+    print("Moderate Password")
+
 else:
     print("Weak Password")
 
