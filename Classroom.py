@@ -67,8 +67,19 @@ print(marks)'''
 # print(type(t4))
 
 
-t1 = (10, 20)
+'''t1 = (10, 20)
 t2 = t1 + (30, )
 print(t2)
 t3 = t2[1:3]
-print(t3)
+print(t3)'''
+
+
+for row in range (1, 6):
+    for poss in range (1, row + 1):
+        if poss == 1 or poss == row:
+            print("D", end = " ")
+        elif (poss + row) % 2 == 0:
+            print("R", end = " ")
+        else:
+            print("Y", end = " ")
+    print()
