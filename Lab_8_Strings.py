@@ -88,7 +88,7 @@ else:
 # Q4. Read a string and a single character. Print how many times the character occurs in the string
 # and the index of every occurrence. If it does not occur, print -1 for the positions.
 
-s = input()
+'''s = input()
 ch = input()
 count = 0
 pos = 0
@@ -107,4 +107,19 @@ if (count > 0):
     print()
 else:
     print("Count:", count)
-    print(f"Position: -1")
+    print(f"Position: -1")'''
+
+
+# Q5. Read a sentence and print the length of each word in it, in order, on one line. Words are
+# separated by one or more spaces, and the sentence may begin or end with spaces.
+
+s = input().lower()
+count = 0
+for ch in s:
+    if (ch != " "):
+        count += 1
+    elif (count > 0):
+        print(f"{count}", end = " ")
+        count = 0
+if (count > 0):
+    print(f"{count}", end = " ")
