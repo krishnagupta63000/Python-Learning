@@ -113,7 +113,7 @@ else:
 # Q5. Read a sentence and print the length of each word in it, in order, on one line. Words are
 # separated by one or more spaces, and the sentence may begin or end with spaces.
 
-s = input().lower()
+'''s = input().lower()
 count = 0
 for ch in s:
     if (ch != " "):
@@ -122,4 +122,23 @@ for ch in s:
         print(f"{count}", end = " ")
         count = 0
 if (count > 0):
-    print(f"{count}", end = " ")
+    print(f"{count}", end = " ")'''
+
+
+# Q6. A Jaipur mall has a parking lane reserved for vehicles registered in Rajasthan. A camera reads
+# the number plate of each car entering the lane. A Rajasthan number plate has exactly 10
+# characters in the pattern UUDDUUDDDD, where U is an uppercase letter and D is a digit, and
+# its first two letters are RJ (for example RJ14CD1234). Check whether the plate read by the
+# camera is a Rajasthan number plate.
+# Input: A single line containing the plate as read by the camera.
+# Output: Print True if it is a Rajasthan number plate, otherwise print False.
+# Constraints:
+# 1 ≤ length of input ≤ 20
+
+s = input()
+if (len(s) < 10 or len(s) > 10):
+    print("False")
+elif (s[0] == "R" and s[1] == "J" and  (s[4] and s[5]) in "QWERTYUIOPASDFGHJKLZXCVBNM"):
+    print("True")
+else:
+    print("True")
