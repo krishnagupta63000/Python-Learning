@@ -542,8 +542,11 @@
 #     l.append(s)
 # print(l)
 
-l = []
-for i in range (5):
-    m = int(input("Enter Marks: "))
-    l.append(m)
-print(l)
+# l = []
+# for i in range (5):
+#     m = int(input("Enter Marks: "))
+#     l.append(m)
+# print(l)
+
+
+print("My name is krishna")
