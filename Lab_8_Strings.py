@@ -142,3 +142,4 @@ elif (s[0] == "R" and s[1] == "J" and  (s[4] and s[5]) in "QWERTYUIOPASDFGHJKLZX
     print("True")
 else:
     print("True")
+
