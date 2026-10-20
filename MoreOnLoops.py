@@ -92,3 +92,12 @@ while i <= n:
     i = i + 2
 
 print("Sum of odd numbers =", sum)
+
+
+# WAP to swap first and last digits of a number.
+# input=12345
+# output= 52341
+
+n = input()
+result = n[-1] + n[1:-1] + n[0]
+print(result)
