@@ -549,4 +549,13 @@
 # print(l)
 
 
-print("My name is krishna")
+# print("My name is krishna")
+
+
+HindiToEnglish = {
+    "Kambal" : "Blanket", 
+    "Pehela" : "First", 
+    "Dusra" : "Second"
+}
+
+print(HindiToEnglish["Pehela"])
