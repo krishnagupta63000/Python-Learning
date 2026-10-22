@@ -552,10 +552,17 @@
 # print("My name is krishna")
 
 
-HindiToEnglish = {
-    "Kambal" : "Blanket", 
-    "Pehela" : "First", 
-    "Dusra" : "Second"
-}
+# HindiToEnglish = {
+#     "Kambal" : "Blanket", 
+#     "Pehela" : "First", 
+#     "Dusra" : "Second"
+# }
 
-print(HindiToEnglish["Pehela"])
+# print(HindiToEnglish["Pehela"])
+
+s = set()
+for i in range (8):
+    n = int(input("Enter Number : "))
+    s.add(n)
+
+print(s)
