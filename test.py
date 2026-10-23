@@ -560,9 +560,20 @@
 
 # print(HindiToEnglish["Pehela"])
 
-s = set()
-for i in range (8):
-    n = int(input("Enter Number : "))
-    s.add(n)
+# s = set()
+# for i in range (8):
+#     n = int(input("Enter Number : "))
+#     s.add(n)
 
-print(s)
+# print(s)
+
+# WAP to calculate product of digits of a number.
+n = int(input("Enter a number: "))
+product = 1
+
+while n > 0:
+    digit = n % 10
+    product = product * digit
+    n = n // 10
+
+print("Product of digits:", product)
