@@ -568,12 +568,24 @@
 # print(s)
 
 # WAP to calculate product of digits of a number.
-n = int(input("Enter a number: "))
-product = 1
+# n = int(input("Enter a number: "))
+# product = 1
 
-while n > 0:
-    digit = n % 10
-    product = product * digit
-    n = n // 10
+# while n > 0:
+#     digit = n % 10
+#     product = product * digit
+#     n = n // 10
 
-print("Product of digits:", product)
+# print("Product of digits:", product)
+
+# WAP to enter a number and print its reverse.
+
+# n = int(input("Enter a number: "))
+# rev = 0
+
+# while n > 0:
+#     digit = n % 10
+#     rev = rev * 10 + digit
+#     n = n // 10
+
+# print("Reverse:", rev)
