@@ -592,16 +592,25 @@
 
 # WAP to check whether a number is palindrome or not.
 
-n = int(input("Enter a number: "))
-temp = n
-rev = 0
+# n = int(input("Enter a number: "))
+# temp = n
+# rev = 0
 
-while n > 0:
-    digit = n % 10
-    rev = rev * 10 + digit
-    n = n // 10
+# while n > 0:
+#     digit = n % 10
+#     rev = rev * 10 + digit
+#     n = n // 10
 
-if temp == rev:
-    print("Palindrome")
-else:
-    print("Not Palindrome")
+# if temp == rev:
+#     print("Palindrome")
+# else:
+#     print("Not Palindrome")
+
+# WAP to enter a number and print it in words.
+num = input("Enter a number: ")
+
+words = ["Zero", "One", "Two", "Three", "Four",
+         "Five", "Six", "Seven", "Eight", "Nine"]
+
+for digit in num:
+    print(words[int(digit)], end=" ")
