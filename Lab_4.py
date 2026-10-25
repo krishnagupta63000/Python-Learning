@@ -1,24 +1,24 @@
 '''A company decided to give bonus of 5% to employee if his/her year of service is more than 5 years. 
 Ask user for their salary and years of service and print the net bonus amount.'''
 
-'''sal = int(input("Enter Salary : "))
-years = int(input("Enter Years of work : "))
-if (years>=5):
-    print("Yeah!, You got an additional bonus of 5%.")
-    print("Your Salary : ", 0.05*sal + sal)
-else: 
-    print("Your Salary : ", sal)'''
+# sal = int(input("Enter Salary : "))
+# years = int(input("Enter Years of work : "))
+# if (years>=5):
+#     print("Yeah!, You got an additional bonus of 5%.")
+#     print("Your Salary : ", 0.05*sal + sal)
+# else: 
+#     print("Your Salary : ", sal)
 
 '''Write a program that reads input data from the console - a password (one line of random text)
 and checks if the input matches the phrase "s3cr3t!P@ssw0rd". If it matches, print "Welcome",
 otherwise print "Wrong password!".'''
 
-'''p = input("Enter Password : ")
-x = "s3cr3t!P@ssw0rd"
-if (p==x):
-    print("Welcome!")
-else: 
-    print("Incorrect Password.")'''
+# p = input("Enter Password : ")
+# x = "s3cr3t!P@ssw0rd"
+# if (p==x):
+#     print("Welcome!")
+# else: 
+#     print("Incorrect Password.")
 
 '''Write a program that reads input data from the console - the measures of a geometric
 shape and calculates its area. There are four types of
@@ -30,22 +30,22 @@ If the shape is a circle, the next argument will be one number - the radius of t
 If the shape is a triangle, the next argument will be two numbers - its base and the
 corresponding altitude.'''
 
-'''sh = input("Enter Shape : ")
-if (sh == "square"):
-    s = int(input("Enter Side of a Square : "))
-    print("Area of Square is", s**2,"sq cm")
-elif(sh == "rectangle"):
-    l = int(input("Enter Length of Rectangle : "))
-    b = int(input("Enter Breadth of Rectangle : "))
-    print("Area of Rectagle is", l*b, "sq cm")
-elif(sh == "circle"):
-    pi = 3.14
-    r = int(input("Enter Radius : "))
-    print("Area of Circle is", pi*r**2,"sq cm")
-else:
-    l = int(input("Enter Length of Triangle : "))
-    b = int(input("Enter Breadth of Triangle : "))
-    print("Area of Triangle is",0.5*l*b,"sq cm")'''
+# sh = input("Enter Shape : ")
+# if (sh == "square"):
+#     s = int(input("Enter Side of a Square : "))
+#     print("Area of Square is", s**2,"sq cm")
+# elif(sh == "rectangle"):
+#     l = int(input("Enter Length of Rectangle : "))
+#     b = int(input("Enter Breadth of Rectangle : "))
+#     print("Area of Rectagle is", l*b, "sq cm")
+# elif(sh == "circle"):
+#     pi = 3.14
+#     r = int(input("Enter Radius : "))
+#     print("Area of Circle is", pi*r**2,"sq cm")
+# else:
+#     l = int(input("Enter Length of Triangle : "))
+#     b = int(input("Enter Breadth of Triangle : "))
+#     print("Area of Triangle is",0.5*l*b,"sq cm")
 
 '''Write a program that reads two integers - hours and minutes based on a 24-hour day format and
 calculates what time it will be 15 minutes later. The result should be printed in the following
@@ -54,13 +54,14 @@ between 0 and 59. Hours should be written with one or two digits as needed, whil
 should always be written with two digits - add a leading zero, as needed. Example, Given the time
 1:46 as input, the output displayed should be 2:01.'''
 
-'''hours = int(input("Enter Hours : "))
-mins = int(input("Enter Minutes : "))
-total = hours * 60 + mins + 15
-h = total//60
-m = total%60
-print("After adding 15 mins : ",h,"Hours", m, "Minutes")
-'''
+# hours = int(input("Enter Hours : "))
+# mins = int(input("Enter Minutes : "))
+# total = hours * 60 + mins + 15
+# h = total//60
+# m = total%60
+# print("After adding 15 mins : ",h,"Hours", m, "Minutes")
+
+
 '''A student has to travel n kilometers. He can choose between three types of transportation:
 Taxi. Starting fee: 33.58 INR. Day rate: 37.89 INR/km. Night rate: 43.17 INR/km.
 Bus. Day / Night rate: 4.32 INR/km. Can be used for distances of a minimum of 20 km.
@@ -68,33 +69,29 @@ Train. Day / Night rate: 2.88 INR/km. Can be used for distances of a minimum of 
 Write a program that reads the number of kilometers n and period of the day (day or night) and
 calculates the price for the cheapest transport.'''
 
-'''n = float(input("Enter kilometers: "))
-time = input("Enter day or night: ")
-
-if (time == "day"):
-    taxi = 33.58 + n * 37.89
-else:
-    taxi = 33.58 + n * 43.17
-
-bus = n * 4.32
-train = n * 2.88
-
-if (n < 20):
-    cheapest = taxi
-elif (n < 100):
-    if (taxi < bus):
-        cheapest = taxi
-    else:
-        cheapest = bus
-else:
-    if (taxi < bus and taxi < train):
-        cheapest = taxi
-    elif (bus < train):
-        cheapest = bus
-    else:
-        cheapest = train
-
-print("Cheapest price:", cheapest)'''
+# n = float(input("Enter kilometers: "))
+# time = input("Enter day or night: ")
+# if (time == "day"):
+#     taxi = 33.58 + n * 37.89
+# else:
+#     taxi = 33.58 + n * 43.17
+# bus = n * 4.32
+# train = n * 2.88
+# if (n < 20):
+#     cheapest = taxi
+# elif (n < 100):
+#     if (taxi < bus):
+#         cheapest = taxi
+#     else:
+#         cheapest = bus
+# else:
+#     if (taxi < bus and taxi < train):
+#         cheapest = taxi
+#     elif (bus < train):
+#         cheapest = bus
+#     else:
+#         cheapest = train
+# print("Cheapest price:", cheapest)
 
 '''Tom Cat likes to sleep all day but, unfortunately, his owner is always playing with him whenever
 he has free time. To sleep well, the norm of games that Tom has is 30,000 minutes per year. The
@@ -105,7 +102,7 @@ Write a program that reads the number of holidays and prints whether Tom can sle
 how much the difference from the norm for the current year is. It is assumed that there are 365
 days in one year.'''
 
-'''n = int(input("Enter Number of Holidays : "))
+n = int(input("Enter Number of Holidays : "))
 workdays = 365-n
 total = 30000
 during_workdays = workdays * 63
@@ -114,7 +111,7 @@ playing_time = during_workdays + during_holidays
 if (playing_time >= total):
     print("can sleep well",(playing_time - total,"Hours"))
 else:
-    print("cant sleep well",total - playing_time,"Hours")'''
+    print("cant sleep well",total - playing_time,"Hours")
 
 '''Most of the people start planning their vacations well in advance. A young programmer from
 Bulgaria has a certain budget (BGN is the currency of Bulgaria) and spare time in a particular
@@ -136,47 +133,46 @@ Winter – 80% of the budget.
 Upon traveling in Europe, regardless of the season, the programmer will
 spend 90% of the budget.'''
 
-'''budget = int(input("Enter Budget : "))
-s = input("Enter Season : ")
-
-if (budget<=100):
-    print("Bulgaria")
-    if (s == 'summer'):
-        print("Camping")
-        print("Budget : ", budget*0.3)
-    else:
-        print("Hotel")
-        print("Budget : ", budget*0.7)
-elif (budget<=1000):
-    print("Balkans")
-    if (s == 'summer'):
-        print("Camping")
-        print("Budget : ", budget*0.4)
-    else:
-        print("Hotel")
-        print("Budget : ", budget*0.8)
-else:
-    print("Europe")
-    print("Hotel")
-    print("Budget : ", budget*0.9)'''
+# budget = int(input("Enter Budget : "))
+# s = input("Enter Season : ")
+# if (budget<=100):
+#     print("Bulgaria")
+#     if (s == 'summer'):
+#         print("Camping")
+#         print("Budget : ", budget*0.3)
+#     else:
+#         print("Hotel")
+#         print("Budget : ", budget*0.7)
+# elif (budget<=1000):
+#     print("Balkans")
+#     if (s == 'summer'):
+#         print("Camping")
+#         print("Budget : ", budget*0.4)
+#     else:
+#         print("Hotel")
+#         print("Budget : ", budget*0.8)
+# else:
+#     print("Europe")
+#     print("Hotel")
+#     print("Budget : ", budget*0.9)
 
 
 '''Write a program that finds all numbers in the range [1 … 1000], that end in 6.'''
 
 
-'''for i in range(1,1001):
-    if (i%10 == 6):
-        print(i)'''
+# for i in range(1,1001):
+#     if (i%10 == 6):
+#         print(i)
 
 '''Write a program that reads n integers and finds their sum.'''
 
 
-'''n = int(input("Enter n : "))
-sum = 0
-for i in range(n):
-    x = int(input("Enter Number : "))
-    sum = sum + x
-print("Sum : ", sum)'''
+# n = int(input("Enter n : "))
+# sum = 0
+# for i in range(n):
+#     x = int(input("Enter Number : "))
+#     sum = sum + x
+# print("Sum : ", sum)
 
 '''Take a positive integer N as input and print its table as follows:
 N x 1 = N
@@ -184,8 +180,8 @@ N x 2 = 2N
 ……
 N x 20 = 20N'''
 
-n = int(input("Enter n : "))
-if (n>0):
-    for i in range(1,11):
-        print(f" {n} x {i} = {i}{n}")
-        print(n,"x",i,"=", i,n)
+# n = int(input("Enter n : "))
+# if (n>0):
+#     for i in range(1,11):
+#         print(f" {n} x {i} = {i}{n}")
+#         print(n,"x",i,"=", i,n)
