@@ -29,22 +29,22 @@ given to the staff. Use the continue statement with a while loop.'''
 #         n += 1
 #     print()
 
-# i = 0
-# while (i<4):
-#     n = 1
-#     j = 0
-#     while (j<i+1):
-#         print(n, end = " ")
-#         n += 1
-#         j += 1
-#     print()
-#     i += 1
-
 i = 0
 while (i<4):
+    n = 1
     j = 0
-    while (j<4-i):
-        print("*", end = " ")
+    while (j<i+1):
+        print(n, end = " ")
+        n += 1
         j += 1
     print()
     i += 1
+
+# i = 0
+# while (i<4):
+#     j = 0
+#     while (j<4-i):
+#         print("*", end = " ")
+#         j += 1
+#     print()
+#     i += 1
