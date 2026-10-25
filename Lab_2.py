@@ -36,6 +36,11 @@ else:
 
 # Q5
 
+a = 2.19
+b = 4.68
+c = (b - a) / a * 100
+print(int(c + 0.5))
+
 # Q6.
 m = int(input("Enter The Number of Months: "))
 y = m//12
