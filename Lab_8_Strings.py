@@ -135,11 +135,52 @@ if (count > 0):
 # Constraints:
 # 1 ≤ length of input ≤ 20
 
-s = input()
+'''s = input()
 if (len(s) < 10 or len(s) > 10):
     print("False")
 elif (s[0] == "R" and s[1] == "J" and  (s[4] and s[5]) in "QWERTYUIOPASDFGHJKLZXCVBNM"):
     print("True")
 else:
-    print("True")
+    print("True")'''
 
+#Q7. 
+'''s = input()
+count = 0
+
+for i in range(len(s) // 2):
+    if s[i] != s[-i-1]:
+        count += 1
+
+print("Changes needed:", count)
+'''
+
+#project:8
+s = input()
+a = ""
+
+for x in s:
+    if x not in a:
+        a += x
+
+print(a)
+
+
+# project:9
+n = int(input("enter n:"))
+num = 1
+for i in range(1,n +1):
+    for j in range(i):
+        print(num,end =" ")
+        num = num +1
+    print()
+
+
+
+# project:10
+n = int(input("enter n :"))
+for i in range(1,n +1):
+    if i <=(n +1)// 2:
+        stars = 2* i-1
+    else:
+        stars = 2*(n-1) +1
+    print(" *" * stars)
