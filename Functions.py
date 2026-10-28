@@ -9,6 +9,10 @@
 #     print("Hello")
 # greet()
 
-def greet (name):
-    print(f"Hello, {name}")
-greet("Krishna")
+# def greet (name):
+#     print(f"Hello {name}")
+# greet("Krishna")
+
+def add(a, b):
+    print(a+b)
+add(2, 3)
