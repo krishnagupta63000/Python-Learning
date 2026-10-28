@@ -5,6 +5,10 @@
 #         largest = i
 # print(largest)
 
-def greet():
-    print("Hello")
-greet()
+# def greet():
+#     print("Hello")
+# greet()
+
+def greet (name):
+    print(f"Hello, {name}")
+greet("Krishna")
