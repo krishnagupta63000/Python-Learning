@@ -607,10 +607,17 @@
 #     print("Not Palindrome")
 
 # WAP to enter a number and print it in words.
-num = input("Enter a number: ")
+# num = input("Enter a number: ")
 
-words = ["Zero", "One", "Two", "Three", "Four",
-         "Five", "Six", "Seven", "Eight", "Nine"]
+# words = ["Zero", "One", "Two", "Three", "Four",
+#          "Five", "Six", "Seven", "Eight", "Nine"]
 
-for digit in num:
-    print(words[int(digit)], end=" ")
+# for digit in num:
+#     print(words[int(digit)], end=" ")
+
+for i in range (5):
+    for j in range (5):
+        print("1", end = " ")
+    print()
+
+
