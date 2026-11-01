@@ -21,18 +21,34 @@
 #     count += 1
 # print(f"Lenght of Set: {count}")
 
-sum = 0
-s = set()
-count = 0
-for i in range (10):
-    x = int(input())
-    s.add(x)
+# sum = 0
+# s = set()
+# count = 0
+# for i in range (10):
+#     x = int(input())
+#     s.add(x)
     
-for j in s:
-    sum += j
-    count += 1
+# for j in s:
+#     sum += j
+#     count += 1
     
-print(count)
-print (sum)
-avg = sum / count 
-print(avg)
+# print(count)
+# print (sum)
+# avg = sum / count 
+# print(avg)
+
+
+# n, m = map(int, input().split())
+# a = set(map(int, input(). split()))
+# b = set(map(int, input(). split()))
+# print(len(a-b))
+
+n, m = map(int, input().split())
+s = map(int, input().split())
+t = map(int, input().split())
+print(s-t)
+# v = s-t
+# count = 0
+# for i in v:
+#     count += 1
+# print(count)
