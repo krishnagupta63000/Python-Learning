@@ -640,11 +640,17 @@
 #     print()
 
 
+# for i in range (5):
+#     for j in range (i+1):
+#         if ((i+j)%2 == 0):
+#             print(1, end = " ")
+#         else:
+#             print(0, end = " ")
+#     print()
+
+n = 0
 for i in range (5):
+    n += 1
     for j in range (i+1):
-        if ((i+j)%2 == 0):
-            print(1, end = " ")
-        else:
-            print(0, end = " ")
+        print(n, end = " ")
     print()
-    
