@@ -648,9 +648,17 @@
 #             print(0, end = " ")
 #     print()
 
-n = 0
+# n = 0
+# for i in range (5):
+#     n += 1
+#     for j in range (i+1):
+#         print(n, end = " ")
+#     print()
+
+
+n = 5
 for i in range (5):
-    n += 1
-    for j in range (i+1):
+    for j in range (5-i):
         print(n, end = " ")
+    n -= 1
     print()
