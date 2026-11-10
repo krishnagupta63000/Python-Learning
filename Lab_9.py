@@ -36,21 +36,30 @@ samples.
 Constraints:
 1 ≤ number of balls ≤ 120'''
 
-s = input().split() 
-for i in s:
-    if (i == "W"):
-        continue
-    else:
-        i = int(i)
-total = 0
-wicket = 0
-boundary = 0
-for i in range(6):
-    if (s[i] == "W"):
-        wicket += 1
-    else:
-        total += s[i]
-        if (s[i] == 4 or s[i] == 6):
-            boundary += 1
+# s = input().split() 
+# for i in s:
+#     if (i == "W"):
+#         continue
+#     else:
+#         i = int(i)
+# total = 0
+# wicket = 0
+# boundary = 0
+# for i in range(6):
+#     if (s[i] == "W"):
+#         wicket += 1
+#     else:
+#         total += s[i]
+#         if (s[i] == 4 or s[i] == 6):
+#             boundary += 1
         
     
+'''Q4. Read a list of integers and print the largest and the smallest number in it, without using max()
+or min().'''
+
+s = list(map(int, input().split()))
+largest = s[0]
+for i in range (len(s)):
+    if (s[i] > largest):
+        largest = s[i]
+print(f'Largest: {largest}')
