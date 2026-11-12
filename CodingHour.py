@@ -20,3 +20,10 @@ Created on Wed Oct 14 15:19:27 2026
 #     w = words[i]
 #     if w in count:
 #         count[w] =
+
+
+def add (a, b):
+    print(a+b)
+
+add(3, 4)
+add(10, 5)
