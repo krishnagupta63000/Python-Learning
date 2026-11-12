@@ -42,3 +42,9 @@ def check(n):
 
 print (check(5))
 print(check(-2))
+
+
+def f():
+    return 1 
+    print(2)
+print(f())
