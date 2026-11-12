@@ -29,7 +29,16 @@ Created on Wed Oct 14 15:19:27 2026
 # add(10, 5)
 
 
-def add (a, b):
-    return a + b
-x = add (2, 3)
-print(x * 10)
+# def add (a, b):
+#     return a + b
+# x = add (2, 3)
+# print(x * 10)
+
+
+def check(n):
+    if n > 0:
+        return "Positive"
+    return "Not Positive"
+
+print (check(5))
+print(check(-2))
