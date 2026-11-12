@@ -22,8 +22,14 @@ Created on Wed Oct 14 15:19:27 2026
 #         count[w] =
 
 
-def add (a, b):
-    print(a+b)
+# def add (a, b):
+#     print(a+b)
 
-add(3, 4)
-add(10, 5)
+# add(3, 4)
+# add(10, 5)
+
+
+def add (a, b):
+    return a + b
+x = add (2, 3)
+print(x * 10)
