@@ -686,7 +686,7 @@
 #         print(n, end = " ")
 #         n += 1
 #     print()
-
+c
 
 # for i in range(5):
 #     n = 1
@@ -724,6 +724,3 @@ for i in range (5):
         print((), end = " ") 
         j += 1
     print()
-
-
-    krishna
