@@ -35,16 +35,24 @@ Created on Wed Oct 14 15:19:27 2026
 # print(x * 10)
 
 
-def check(n):
-    if n > 0:
-        return "Positive"
-    return "Not Positive"
+# def check(n):
+#     if n > 0:
+#         return "Positive"
+#     return "Not Positive"
 
-print (check(5))
-print(check(-2))
+# print (check(5))
+# print(check(-2))
 
 
-def f():
-    return 1 
-    print(2)
-print(f())
+# def f():
+#     return 1 
+#     print(2)
+# print(f())
+
+
+def f(n):
+    if (n == 0 or n == 1):
+        return 1
+    return n * f(n-1)
+n = int(input("Enter Number: "))
+print(f"Factorial of {n} is {f(n)}")
