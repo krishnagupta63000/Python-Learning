@@ -57,9 +57,26 @@ Constraints:
 '''Q4. Read a list of integers and print the largest and the smallest number in it, without using max()
 or min().'''
 
-s = list(map(int, input().split()))
-largest = s[0]
-for i in range (len(s)):
-    if (s[i] > largest):
-        largest = s[i]
-print(f'Largest: {largest}')
+# s = list(map(int, input().split()))
+# largest = s[0]
+# for i in range (len(s)):
+#     if (s[i] > largest):
+#         largest = s[i]
+# print(f'Largest: {largest}')
+
+s = input()
+l = []
+count = 0
+c = []
+l.append(s)
+for i in l:
+    for j in i:
+        count += 1
+    c.append(count)
+print(c)
+    
+
+
+
+
+krishna
