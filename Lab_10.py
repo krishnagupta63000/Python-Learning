@@ -54,3 +54,28 @@ if name in d:
     print(d[name])
 else:
     print("Not Found")
+
+
+
+# Ques 9, 
+n = int(input())
+d = {}
+for i in range(n):
+    item, qty = input().split()
+    d[item] = int(qty)
+q = int(input())
+for i in range(q):
+    action, item, qty = input().split()
+    qty = int(qty)
+    if action == "Sell":
+        if d[item] >= qty:
+            d[item] -= qty
+        else:
+            print("Insufficient Stock: ", item)
+    else:
+        if item in d:
+            d[item] += qty
+        else:
+            d[item] = qty
+for items in d:
+    print(item, d[item])
