@@ -77,6 +77,46 @@ print(c)
     
 
 
+# ques 5, 
+t = list(input().split())
+largest = t[0]
+for i in t:
+    if len(t) > len(largest):
+        largesy = t
+print(largest)
 
 
-krishna
+# ques 6, 
+item = list(input().split())
+pr = list(map(int, input().split()))
+n = input().split()
+t = 0
+order = []
+for i in n:
+    if i not in order:
+        order.append(i)
+for i in item:
+    if i in order:
+        c = 0
+        for j in n:
+            if i == j:
+                c += 1
+        p = pr[item.index(i)]*c
+        print(f"{i} x {c} = {pr}")
+        t += pr
+print(f"Total : {t}")
+
+
+# ques 7, 
+n = input().split()
+r = " "
+for i in n:
+    reverse = " "
+    for j in i:
+        reverse += j
+    r += r + " "
+print(r)
+
+
+# ques 8, 
+n = input
