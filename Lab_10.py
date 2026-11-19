@@ -79,3 +79,6 @@ for i in range(q):
             d[item] = qty
 for items in d:
     print(item, d[item])
+
+
+krishna
