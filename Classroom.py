@@ -74,12 +74,21 @@ t3 = t2[1:3]
 print(t3)'''
 
 
-for row in range (1, 6):
-    for poss in range (1, row + 1):
-        if poss == 1 or poss == row:
-            print("D", end = " ")
-        elif (poss + row) % 2 == 0:
-            print("R", end = " ")
-        else:
-            print("Y", end = " ")
-    print()
+# for row in range (1, 6):
+#     for poss in range (1, row + 1):
+#         if poss == 1 or poss == row:
+#             print("D", end = " ")
+#         elif (poss + row) % 2 == 0:
+#             print("R", end = " ")
+#         else:
+#             print("Y", end = " ")
+#     print()
+
+
+Square = lambda x : x*x
+print(Square(5))
+
+
+
+even = lambda n : n%2==0
+print(even(5))
