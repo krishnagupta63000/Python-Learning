@@ -92,3 +92,7 @@ print(Square(5))
 
 even = lambda n : n%2==0
 print(even(5))
+
+'''numeber divisible by both 3 and 5 '''
+check = lambda x : x%15 == 0
+print(check(15))
