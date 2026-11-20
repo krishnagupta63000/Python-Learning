@@ -97,3 +97,7 @@ print(even(5))
 check = lambda x : x%15 == 0
 print(check(15))
 
+add = lambda x, y : x + y
+print(add(2, 3))
+
+
