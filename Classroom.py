@@ -101,3 +101,6 @@ add = lambda x, y : x + y
 print(add(2, 3))
 
 
+larger(a, b)
+larger = lambda a, b: a if a>b else b
+print(10, 239)
