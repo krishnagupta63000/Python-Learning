@@ -85,7 +85,7 @@ print(t3)'''
 #     print()
 
 
-Square = lambda x : x*x
+'''Square = lambda x : x*x
 print(Square(5))
 
 
@@ -93,7 +93,7 @@ print(Square(5))
 even = lambda n : n%2==0
 print(even(5))
 
-'''numeber divisible by both 3 and 5 '''
+# numeber divisible by both 3 and 5 
 check = lambda x : x%15 == 0
 print(check(15))
 
@@ -101,6 +101,21 @@ add = lambda x, y : x + y
 print(add(2, 3))
 
 
-larger(a, b)
+
 larger = lambda a, b: a if a>b else b
-print(10, 239)
+print(10, 239)'''
+
+'''map():
+nums = [1, 2, 3, 4]
+result = list(map(lambda x: x+1, nums))
+    print(result)'''
+
+filter(): nums = [1, 2, 3, 4, 5, 6]
+result = list(filter(lambda x: x%2==0, nums))
+print(result)
+
+'''reduce() from functools input reduce
+nums = [1, 2, 3, 4]
+result = reduce(lambda a, b: a+b, nums)
+print(result)'''
+
