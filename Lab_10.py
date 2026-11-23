@@ -81,4 +81,3 @@ for items in d:
     print(item, d[item])
 
 
-krishna
