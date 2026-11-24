@@ -81,3 +81,4 @@ for items in d:
     print(item, d[item])
 
 
+# my streak is geting very hard right now 
