@@ -82,3 +82,4 @@ for items in d:
 
 
 # my streak is geting very hard right now 
+# ghee khatam
